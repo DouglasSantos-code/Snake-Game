@@ -3,7 +3,7 @@
 ## Demonstration
 <img src="./assets/demonstration.png">
 
-Clássico snake game. Para jogar [clica aqui](site).
+Clássico snake game. Para jogar [clica aqui](https://douglassantos-code.github.io/Snake-Game/).
 
 <br>
 
