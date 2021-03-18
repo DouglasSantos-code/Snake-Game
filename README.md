@@ -46,4 +46,4 @@ Encontre-me em [![Gmail Badge](https://img.shields.io/badge/gmail-rgb(29,58,95)?
 
 <br>
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/DouglasSantos-code/Site-Personal-Trainer/blob/main/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/DouglasSantos-code/Snake-Game/blob/main/LICENSE) para mais detalhes.
