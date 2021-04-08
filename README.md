@@ -7,22 +7,6 @@ Clássico snake game. Para jogar [clica aqui](https://douglassantos-code.github.
 
 <br>
 
-## status
-🚧 Em desenvolvimento 🚀
-
-
-<br>
-
-##  Features
-
-- [ ] Tela de start
-- [ ] Tela de game over
-- [ ] Mudar o estilo da snake
-- [ ] Mudar campo do jogo
-- [ ] Configurar para mobile
-- [ ] Criar novas fases com obstáculos
-
-<br> 
 
 ## 💻 Techs
 
