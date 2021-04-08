@@ -10,14 +10,28 @@
 </head>
 
 <body>
-    <div class="contanier">
-        <canvas .class="stage" id="stage" width="500" height="500"></canvas>
+    <div class="start">
+        <div class="welcome">
+            <h1>Bem vindo ao Snake Game!</h1>
+            <h2>Escolha o nível de dificuldade desejado. </h2>
+        </div>
+      
         <div class="btn">
             <input type="submit" value="EASY" id="btn1" class="botao"></input>
             <input type="submit" value="MEDIUM" id="btn2" class="botao"></input>
             <input type="submit" value="HARD" id="btn3" class="botao"></input>
         </div>
-        <script src="./scripts/script.js"></script>
+    </div>
+
+    <div class="end">
+        <h1>Fim de Jogo!</h1>
+        <button id="btnRestart">Clique aqui para jogar novamente!</button>
+    </div>
+
+    <div class="contanier">
+        <canvas .class="stage" id="stage" width="500" height="500"></canvas>
+    </div>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

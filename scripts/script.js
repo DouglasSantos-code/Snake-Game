@@ -7,7 +7,8 @@ window.onload = () => {
 
     const advance_speed = 1; //Quantidade de casa que a cobra avança
 
-    let vx = vy = 0;
+    let vx = 1;
+    let vy = 0;
     let position_x = 10;
     let position_y = 15;
     let piece_size = 20;
@@ -31,7 +32,9 @@ window.onload = () => {
         btnEasy.removeEventListener('click', easy)
         document.querySelector('#btn2').style.display = 'none'
         document.querySelector('#btn3').style.display = 'none'
-        console.log(valor)
+        document.querySelector('.start').style.display = 'none'
+        document.querySelector('.contanier').style.display = 'flex'
+
     })
 
     btnMedium.addEventListener('click', function medium() {
@@ -40,7 +43,10 @@ window.onload = () => {
         btnMedium.removeEventListener('click', medium)
         document.querySelector('#btn1').style.display = 'none'
         document.querySelector('#btn3').style.display = 'none'
-        console.log(valor)
+        document.querySelector('.start').style.display = 'none'
+        document.querySelector('.contanier').style.display = 'flex'
+
+
     })
 
     btnHard.addEventListener('click', function hard() {
@@ -49,9 +55,10 @@ window.onload = () => {
         btnHard.removeEventListener('click', hard)
         document.querySelector('#btn2').style.display = 'none'
         document.querySelector('#btn1').style.display = 'none'
-        console.log(valor)
-    })
+        document.querySelector('.start').style.display = 'none'
+        document.querySelector('.contanier').style.display = 'flex'
 
+    })
 
 
     function game() {
@@ -84,6 +91,14 @@ window.onload = () => {
             if (trail[i].x == position_x && trail[i].y == position_y) {
                 vx = vy = 0 //GAMEOVER
                 tail = 3
+                document.querySelector('.end').style.display = 'flex'
+                document.querySelector('.contanier').style.display = 'none'
+                document.querySelector('#btnRestart').addEventListener('click', ()=>{
+
+                 document.location.reload() 
+                })
+
+
             }
         }
         trail.push({
@@ -95,16 +110,16 @@ window.onload = () => {
         }
 
         if (apple_x == position_x && apple_y == position_y) {
-            tail++; 
+            tail++;
             apple_x = Math.floor(Math.random() * board_size)
-            apple_y = Math.floor(Math.random() * board_size) 
+            apple_y = Math.floor(Math.random() * board_size)
         }
 
     }
 
 
     function keyPush(event) {
-    
+
         const left = 37
         const up = 38
         const right = 39
